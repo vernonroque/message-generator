@@ -14,4 +14,13 @@ const comedyLine4 = "The dude abides. - The Big Lebowski";
 const comedyLine5 = "O'Doyle rules! - Billy Madison";
 const comedyArray = [ comedyLine1,comedyLine2,comedyLine3,comedyLine4,comedyLine5];
 
+const dramaLine1 = "I'm going to make him an offer he can't refuse. - The Godfather";
+const dramaLine2 = "Toto, I've got a feeling we're not in Kansas anymore. -The Wizard of Oz";
+const dramaLine3 = "May the Force be with you. - Star Wars";
+const dramaLine4 = "You talking to me? - Taxi Driver";
+const dramaLine5 = "E.T. phone home. - E.T. The Extra-terrestrial";
+const dramaArray = [dramaLine1,dramaLine2,dramaLine3,dramaLine4,dramaLine5];
+
+
+
 
