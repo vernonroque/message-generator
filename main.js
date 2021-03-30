@@ -1,5 +1,5 @@
 console.log('Welcome to the famous movie line generator!');
-
+//messages that will be displayed randomly
 const horrorLine1 = '"Here\'s Johnny!" -The Shining';
 const horrorLine2 = '"Hello Clarice." -Silence of the Lambs';
 const horrorLine3 = '"Do you like scary movies?" -Scream';
@@ -25,7 +25,7 @@ const actionLine4 = '"I\'m tired of these motherf***ing snakes, on this motherf*
 const actionLine5 = '"Say hello to my little friend." -Scarface';
 
 
-
+//randomly selects a line from a horror movie
 const horrorFunc = () => {
 
     const horrorArray = [ horrorLine1, horrorLine2, horrorLine3, horrorLine4, horrorLine5];
@@ -39,6 +39,7 @@ do{
 return horrorArray[randHorror];
 }
 
+//randomly selects a line from a comedy movie
 const comedyFunc = () => {
 
 const comedyArray = [comedyLine1,comedyLine2,comedyLine3,comedyLine4,comedyLine5];
@@ -47,6 +48,7 @@ const randComedy = Math.floor(Math.random()*5);
 return comedyArray[randComedy];
 }
 
+//randomly selects a line from a drama movie
 const dramaFunc = () => {
 
 const dramaArray = [dramaLine1,dramaLine2,dramaLine3,dramaLine4,dramaLine5];
@@ -55,6 +57,7 @@ const randDrama = Math.floor(Math.random()*5);
 return dramaArray[randDrama];
 }
 
+//randomly selects a random line from an action movie
 const actionFunc = () => {
     const actionArray = [actionLine1,actionLine2,actionLine3,actionLine4,actionLine5];
 
@@ -62,6 +65,7 @@ const randAction = Math.floor(Math.random()*5);
 return actionArray[randAction]; 
 }
 
+//randomly selects any movie line in any of the four categories.
 const mysteryFunc = () => {
     const mysteryArray = [horrorLine1,horrorLine2,horrorLine3,horrorLine4,horrorLine5,
         comedyLine1,comedyLine2,comedyLine3,comedyLine4,comedyLine5,
@@ -71,10 +75,11 @@ const mysteryFunc = () => {
     const randMystery = Math.floor(Math.random()*20);
     return mysteryArray[randMystery];
 }
-
+//user selects one of the following genres: horror, comedy, drama, action or mystery.
 const genre = 'Mystery'.toLowerCase();
 console.log(genre);
 
+//switch case statements that calls the respective function based on what genre the user selects.
 switch(genre){
     case 'horror': 
         console.log(`You chose: ${genre}! Here is a random ${genre} line:`);
