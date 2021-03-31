@@ -11,7 +11,7 @@ This javascript program generates random movie lines once the user selects one o
 
 If the user selects the "mystery" genre, the program will randomly select any movie line from any of the four categories.
 
-## Technologies used ##
+## Technologies Used ##
 ______________
 This program only uses javascript. This program implements the use of the following:
 
